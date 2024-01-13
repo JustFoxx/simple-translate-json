@@ -2,6 +2,12 @@
 name = "simple-translate-json"
 version = "0.1.0"
 edition = "2021"
+license = "MIT"
+description = "Simple mini library made for translations (JSON)"
+homepage = "https://github.com/JustFoxx/simple-translate-json"
+repository = "https://github.com/JustFoxx/simple-translate-json"
+documentation = "https://github.com/JustFoxx/simple-translate-json"
+readme = "README.md"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
