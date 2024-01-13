@@ -27,11 +27,13 @@ use std::collections::HashMap;
 use include_dir::{Dir, File};
 use serde_json::from_str;
 
+/// Struct holding the translation
 pub struct Translation {
     translation: HashMap<String, String>,
 }
 
 impl Translation {
+    /// Create a new translation instance
     pub fn new(language: Option<String>, language_dir: Dir) -> Self {
         if language.is_none() {
             return Translation::default(language_dir)
@@ -50,6 +52,7 @@ impl Translation {
         }
     }
 
+    /// Get the translation from key
     pub fn get(&self, key: &str) -> String {
         self.translation.get(key).unwrap_or(&key.to_string()).to_string()
     }
